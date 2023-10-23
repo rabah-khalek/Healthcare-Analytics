@@ -21,3 +21,12 @@ Hospital admission data was analyzed to accurately predict the patient’s Lengt
 
 -	A dense neural network with 6 layers which yields an accuracy of 42.5%.
 
+Bias, Risks, and Limitations:
+
+The model was analyzed with [Giskard](github.com/giskard-AI/giskard) and the following limitations were identified:
+
+- [Performance issues](https://docs.giskard.ai/en/latest/getting-started/key_vulnerabilities/performance_bias/index.html) (12): The model exhibits low precision across different groups or segments of the data.
+- [Overconfidence issues](https://docs.giskard.ai/en/latest/getting-started/key_vulnerabilities/overconfidence/index.html) (3): The model produces predictions that are incorrect but are assigned high probabilities or confidence scores.
+- [Underconfidence issues](https://docs.giskard.ai/en/latest/getting-started/key_vulnerabilities/underconfidence/index.html) (13): The model produces predictions with low confidence, even when the true label is highly likely.
+
+A full report is available [here](https://htmlpreview.github.io/?https://github.com/rabah-khalek/Healthcare-Analytics/blob/ece49dc742b355e4cc2498a558fb364c1c0a6e78/reports/2023.10.23-16.16.56.html).
